@@ -8,9 +8,9 @@ const NavBar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#1E1F26] text-gray-300'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#1E1F26] text-gray-300 no-underline'>
       <div>
-        <Link to="home" className='cursor-pointer'>
+        <Link to="home" className='cursor-pointer no-underline'>
           Logo
           {/* <img src={Logo} alt="Logo" style={{ width: '65px'}}/> */}
         </Link>
@@ -18,21 +18,21 @@ const NavBar = () => {
         {/* Menu */}
         <ul className='hidden md:flex gap-2'>
           <li>
-            <Link to="/">
+            <Link to="/" className="no-underline">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/community">
+            <Link to="/community" className="no-underline">
               Community
             </Link>
           </li>
           <li>
-            <Link to="/chat">
+            <Link to="/chat" className="no-underline">
               Chat
             </Link>
           </li>
-          {/* Login and signup button */}
+          {/* Login and signup buclassName="no-underline"tton */}
         </ul>
 
       {/* Hamburger */}
