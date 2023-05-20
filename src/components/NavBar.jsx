@@ -18,7 +18,7 @@ const NavBar = () => {
         {/* Menu */}
         <ul className='hidden md:flex gap-2'>
           <li>
-            <Link to="/home">
+            <Link to="/">
               Home
             </Link>
           </li>
@@ -32,11 +32,6 @@ const NavBar = () => {
               Chat
             </Link>
           </li>
-          <li>
-            <Link to="/contact">
-              Contact
-            </Link>
-          </li>
           {/* Login and signup button */}
         </ul>
 
@@ -48,23 +43,18 @@ const NavBar = () => {
       {/* Mobile menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#283655] flex flex-col justify-center items-center'}>
         <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="home">
+            <Link onClick={handleClick} to="/">
               Home
             </Link>
           </li>
           <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="community">
+            <Link onClick={handleClick} to="/community">
               Community
             </Link>
           </li>
           <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="Chat">
+            <Link onClick={handleClick} to="/chat">
               Chat
-            </Link>
-          </li>
-          <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="contact">
-              Contact
             </Link>
           </li>
       </ul>
