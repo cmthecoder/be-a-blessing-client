@@ -5,12 +5,16 @@ import Chat from "./pages/Chat";
 import Community from "./pages/Community";
 import Profile from "./pages/Profile";
 import { Routes, Route } from "react-router-dom";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <>
       <NavBar />
       <Routes>
+        <Route path='/signup' element={<SignUp />}/>
+        <Route path='/login' element={<Login />}/>
         <Route path='/' element={<Home />}/>
         <Route path='/chat' element={<Chat />}/>
         <Route path='/community' element={<Community />}/>

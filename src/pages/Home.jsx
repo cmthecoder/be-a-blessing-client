@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <div>
       <CarouselContainer />
+      <Verse />
     </div>
   )
 }
