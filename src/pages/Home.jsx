@@ -10,6 +10,7 @@ const Home = () => {
     <div>
       <CarouselContainer />
       <Verse />
+      <About />
     </div>
   )
 }

@@ -35,19 +35,19 @@ const NavBar = () => {
         </ul>
       </div>
       {/* Menu */}
-      <ul className="hidden md:flex gap-2">
-        <li>
+      <div className="hidden md:flex gap-2">
+        <div>
           <Link to="/signup" className="no-underline text-white">
-            <Button variant="outlined">Sign up</Button>
+            <Button variant="outlined" sx={{color: '#ffff', border: '2px #ffff solid'}}>Sign up</Button>
           </Link>
-        </li>
-        <li>
+        </div>
+        <div>
           <Link to="/login" className="no-underline text-white">
-            <Button variant="outlined">Log in</Button>
+            <Button variant="outlined" sx={{color: '#ffff', border: '2px #ffff solid'}}>Log in</Button>
           </Link>
-        </li>
+        </div>
         {/* Login and signup buclassName="no-underline"tton */}
-      </ul>
+      </div>
 
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">

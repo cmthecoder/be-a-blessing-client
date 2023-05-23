@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import photos from "./carouselPhotos";
+import photos from "../utils/carouselPhotos";
 
 const CarouselContainer = () => {
   return (
