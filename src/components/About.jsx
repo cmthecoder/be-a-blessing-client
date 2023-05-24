@@ -1,5 +1,7 @@
 import React from "react";
 import history from "../assets/history.jpg";
+import vision from "../assets/vision.jpg";
+import hands from "../assets/hands.jpg";
 
 const About = () => {
   return (
@@ -22,11 +24,10 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="order-2 md:order-2">
-          <img src={history} alt="" className="w-full" />
-          Logo
+          <img src={hands} alt="" className="w-full" />
         </div>
         <div className="order-1 md:order-1">
-          <h3 className="text-2xl font-bold">A Brief History</h3>
+          <h3 className="text-2xl font-bold">Mission</h3>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id
             gravida nulla. In porta fermentum finibus. Suspendisse ut lectus
@@ -37,7 +38,7 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="order-2 md:order-1">
-          <h3 className="text-2xl font-bold">A Brief History</h3>
+          <h3 className="text-2xl font-bold">Vision</h3>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id
             gravida nulla. In porta fermentum finibus. Suspendisse ut lectus
@@ -45,8 +46,7 @@ const About = () => {
           </p>
         </div>
         <div className="order-1 md:order-2">
-          <img src={history} alt="" className="w-full" />
-          Logo
+          <img src={vision} alt="" className="w-full" />
         </div>
       </div>
     </div>

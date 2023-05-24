@@ -11,6 +11,7 @@ const Home = () => {
       <CarouselContainer />
       <Verse />
       <About />
+      <Contact />
     </div>
   )
 }
